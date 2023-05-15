@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #D2FBF2;
+    background: #c9f1e7;
 }
 
 header{
@@ -58,17 +58,25 @@ a{
     align-items: center;
 }
 
-button{
+.consultas{
     background: #07DDAE;
     height: 60%;
-    width: 45%;
+    width: 60%;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    color: white;
+    border: 3px solid #07DDAE;
+}
+
+.consultas:hover{
+    background-color: #c9f1e7;
+    border-color: black;
+    color: black;
 }
 
 
-.barra_menu{
+/* .barra_menu{
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -95,4 +103,89 @@ button{
 
 .activarlinea3{
     transform: rotate(-45deg) translate(-4px, 2px);
+} */
+
+
+section{
+    height: 80vh;
+    width: 90%;
+    margin: 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.descripcion{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion h1{
+    font-size: 50px;
+}
+
+.descripcion p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.empezar{
+    font-size: 20px;
+    height: 60px;
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 3px solid;
+}
+
+.empezar:hover{
+    background-color: #07DDAE;
+    box-shadow: 0 0 20px #05d8ce;
+    border-color: #07DDAE;
+    color: white;
+}
+
+button{
+    transition: all 0.6s ease;
+}
+
+.interactivo{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo{
+    height: 600px;
+    width: 600px;
+}
+
+.veterinaria{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    animation: representacion 5s ease-in-out infinite;
+
+}
+
+@keyframes representacion{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
