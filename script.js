@@ -15,3 +15,10 @@
     
 
 // });
+
+const empezar = document.querySelector("#empezar");
+
+empezar.addEventListener("click", () => {
+    const quienesSomos = document.querySelector("#main");
+    quienesSomos.scrollIntoView({ behavior: "smooth" });
+});

@@ -9,11 +9,15 @@ body{
 }
 
 header{
+    position: fixed ;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    z-index: 1;
 }
 
 .presentacion{
@@ -107,7 +111,7 @@ a{
 
 
 section{
-    height: 80vh;
+    height: 95vh;
     width: 90%;
     margin: 20px 70px;
     display: flex;
@@ -118,6 +122,7 @@ section{
 .descripcion{
     height: 90%;
     width: 40%;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +177,6 @@ button{
     height: 500px;
     width: 500px;
     position: absolute;
-    z-index: 1;
     animation: representacion 5s ease-in-out infinite;
 
 }
@@ -189,3 +193,52 @@ button{
     }
 }
 
+
+.contenidoInicial{
+    width: 90%;
+    height: 900px;
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quienes-somos{
+    margin-top: 100px;
+    height: 700px;
+    width: 90%;
+}
+
+.quienes-somos h2{
+    margin-top: 60px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.separacion{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.separacion p{
+    margin: 30px 90px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.separacion img{
+    animation: veterinario 5s ease-in-out infinite;
+}
+
+@keyframes veterinario{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
